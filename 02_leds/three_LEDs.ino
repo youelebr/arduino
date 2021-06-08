@@ -1,4 +1,6 @@
-
+/**
+ * Code example that make blink 3 LEDs in turn
+ **/
 #define DELAY 1000
 #define REDLED 13
 #define GREENLED 12
@@ -6,26 +8,26 @@
 
 void setup()
 {
-  pinMode(REDLED, OUTPUT);   // declare LED pins as output
+  pinMode(REDLED,   OUTPUT);   // declare LED pins as output
   pinMode(GREENLED, OUTPUT); // declare LED pins as output
-  pinMode(BLUELED, OUTPUT);  // declare LED pins as output
+  pinMode(BLUELED,  OUTPUT);  // declare LED pins as output
 }
 
 void loop()
 {
   digitalWrite(REDLED, HIGH);
   delay(DELAY);
-  digitalWrite(REDLED,LOW);
+  digitalWrite(REDLED, LOW);
   delay(DELAY);
 
   digitalWrite(GREENLED, HIGH);
   delay(DELAY);
-  digitalWrite(GREENLED,LOW);
+  digitalWrite(GREENLED, LOW);
   delay(DELAY);
 
   
   digitalWrite(BLUELED, HIGH);
   delay(DELAY);
-  digitalWrite(BLUELED ,LOW);
+  digitalWrite(BLUELED, LOW);
   delay(DELAY);
 }

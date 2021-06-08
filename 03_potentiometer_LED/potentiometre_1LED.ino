@@ -1,7 +1,6 @@
-
 /**
- * 
- */
+ * Code example that make light a LED according to a potentiometer
+ **/
 #define DELAY 1000
 #define MIN_RAW 0
 #define MAX_RAW 1023
